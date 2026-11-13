@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: red;   <!-- this is a descendant selector, it selects all <p> elements that are descendants of a <div> element -->
+        }
+        div > p{
+            color: blue; <!-- this is a child selector, it selects all <p> elements that are direct children of a <div> element -->
+        }
+        div+p{
+            color:rgb(64, 7, 92)  <!-- this is an adjacent sibling selector, it selects all <p> elements that are immediately preceded by a <div> element -->
+        }
+        div~p{
+            color:rgb(3, 71, 38) <!-- this is a general sibling selector, it selects all <p> elements that are preceded by a <div> element --> 
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>combinator selector</h2>
+    <div>
+        <p>combinator selector</p>
+        <p>combinator selector</p>
+        <selection>
+            <p>child selector</p>
+        </selection>
+    </div>
+        <p>general sibling selector</p>
+        <p>general sibling selector</p>
+</body>
+</html>

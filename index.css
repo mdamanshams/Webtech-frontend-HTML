@@ -1,0 +1,15 @@
+h1{
+    color:red;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 150px;
+}
+h1:hover{
+    color:rgb(139, 29, 139);
+    font-size: 350px;
+    transition-property: color, font-size;
+    transition-duration: 2s;
+}
+body{
+    background-color:lightblue;
+}
